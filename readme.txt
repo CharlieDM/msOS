@@ -138,14 +138,19 @@ V1.1.0.20151123_Release
 V1.2.0.20151125
 1、硬件平台为msPLC-100C
 2、增加RTC万年历功能，时间为2013~2099年
+
 V1.2.1.20151201 
 1、修正device_di.c中的PortRegister函数端口注册错误
 2、增加Adc、Di、Do的端口数据类型，并且理解节拍扫描获取端口信息
 3、增加USART3驱动，为modbus_host准备
 4、modbus_slave的交换数据改成三路端口(Adc、Di、Do)。
+
 V1.3.0.20151228
 1、增加modbus_host主机功能
 2、统一了modbus主从机的编程风格
+
+V1.3.0.20160109
+1、配合书改进了Modbus的宏定义
 
 
 

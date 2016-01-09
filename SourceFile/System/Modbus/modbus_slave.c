@@ -31,7 +31,7 @@
 #include "system.h"
 
 #define DeviceID                    1
-#define TimeoutSum                  2
+#define RxdTimeoutSum               2
 
 #define TxdBufferSum                256
 #define RxdBufferSum                256
@@ -421,7 +421,7 @@ static void SystickRoutine(void)
     if (RxdState == yes)
     {
         RxdTimeout++;
-        if (RxdTimeout > TimeoutSum)
+        if (RxdTimeout > RxdTimeoutSum)
         {
             RxdState = no;
             ParseRxdFrame();
