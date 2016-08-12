@@ -30,7 +30,7 @@
 
 #include "system.h"
 
-#define RxdTimeoutSum               2
+#define RxdTimeoutSum                  2
 
 #define TxdBufferSum                256
 #define RxdBufferSum                256
@@ -487,7 +487,7 @@ static void ParseReg(void)
 static void ParseObject(void)
 {
     int i;
-    for (i = 0; i < 4; i++)
+    for (i = 0; i < 4; i++)                     // 寻找当前处理节点
     {
         if (((ushort *)&Sum)[TxdNode.Type] == 0) 
         {

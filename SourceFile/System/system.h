@@ -180,6 +180,11 @@ typedef struct
             }Pwm;
         }DO;
 
+        struct Key
+        {
+            void (*Enable)(bool status);
+        }Key;
+        
         struct Misc
         {
             void (*SetBeep)(bool status);

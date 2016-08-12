@@ -365,6 +365,7 @@ static void AddLabel(Form * formPointer, Label *labelPointer)
     labelPointer->Coefficient = 1;
     
     labelPointer->StringBlockPointer = null;
+    labelPointer->Align = GuiDataAlignRight;
     labelPointer->NextLabelPointer = formPointer->LabelPointer;
     formPointer->LabelPointer = labelPointer;
 }
@@ -390,6 +391,7 @@ static void AddTextBox(Form * formPointer, TextBox *textBoxPointer)
     textBoxPointer->Coefficient = 1;
     
     textBoxPointer->StringBlockPointer = null;
+    textBoxPointer->Align = GuiDataAlignRight;
     textBoxPointer->NextTextBoxPointer = null;
 
     if (formPointer->TextBoxPointer == null)

@@ -32,7 +32,7 @@ ushort CriticalNesting = 0;
 
 uint RomBase;
 uint RamBase;
-DataStruct * AppDataPointer;
+DataStruct * AppDataPointer = (DataStruct *)0;
 
 static const byte HextoAscii[16] = 
 {
